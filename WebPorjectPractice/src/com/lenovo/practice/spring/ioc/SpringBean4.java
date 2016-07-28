@@ -1,4 +1,4 @@
-package com.lenovo.practice.spring.lesson01;
+package com.lenovo.practice.spring.ioc;
 
 public class SpringBean4 {
 	public void print(){

@@ -1,4 +1,4 @@
-package com.lenovo.practice.spring.lesson01;
+package com.lenovo.practice.spring.ioc;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

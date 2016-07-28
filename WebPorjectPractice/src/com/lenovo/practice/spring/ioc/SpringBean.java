@@ -1,6 +1,6 @@
-package com.lenovo.practice.spring.lesson01;
+package com.lenovo.practice.spring.ioc;
 
-public class SpringBean3 {
+public class SpringBean {
 	public void print(){
 		System.out.println(this.getClass() +"===" + Integer.toHexString(this.hashCode()));
 	}
