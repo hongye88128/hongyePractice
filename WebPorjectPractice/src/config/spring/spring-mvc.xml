@@ -18,7 +18,7 @@
 	<!-- 配置SpringMVC的视图渲染器， 让其前缀为:/pages 后缀为.jsp 将视图渲染到/pages/<method返回值>.jsp中 -->
 	<beans:bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
-		p:prefix="/pages/" p:suffix=".jsp">
+		p:prefix="/pages/spring/" p:suffix=".jsp">
 	</beans:bean>
 
 

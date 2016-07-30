@@ -7,15 +7,15 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HelloController {
 	/***
-	 * 首页 返回至/page/home.jsp页面
+	 * 首页 返回至/pages/spring/hello.jsp页面
 	 * 
 	 * @return
 	 */
-	@RequestMapping("/index")
+	@RequestMapping("/hello")
 	public ModelAndView index() {
 		// 创建模型跟视图，用于渲染页面。并且指定要返回的页面为home页面
-		ModelAndView mav = new ModelAndView("home");
-		System.out.println("==========d========");
+		ModelAndView mav = new ModelAndView("hello");
+		System.out.println("will direct to hello.jsp");
 		return mav;
 	}
 }
