@@ -12,10 +12,27 @@ public class HelloController {
 	 * @return
 	 */
 	@RequestMapping("/hello")
-	public ModelAndView index() {
+	public ModelAndView hello() {
 		// 创建模型跟视图，用于渲染页面。并且指定要返回的页面为home页面
 		ModelAndView mav = new ModelAndView("hello");
 		System.out.println("will direct to hello.jsp");
+		return mav;
+	}
+
+	@RequestMapping("form")
+	public ModelAndView formProcess(String name, String password) {
+		System.out.println("username===========>" + name);
+		System.out.println("password===========>" + password);
+		String result = "";
+		if ("admin".equals(name) && "admin".equals(password)) {
+			result = "success";
+		} else {
+			result = "fail";
+		}
+		ModelAndView mav = new ModelAndView(result);
+		mav.addObject("name", name);
+		System.out.println("will direct to " + result + ".jsp");
+		
 		return mav;
 	}
 }
